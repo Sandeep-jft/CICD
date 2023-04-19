@@ -3,7 +3,9 @@ const app = express();
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-  res.json({ message: "Hello from server" });
+  res.send(
+    "<h1>Hello from sandeep </h1><br /><h4>This is ec2 server runnig using pipelie </h4>"
+  );
 });
 
 app.get("/list", (req, res) => {
