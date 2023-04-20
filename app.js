@@ -8,6 +8,13 @@ app.get("/", (req, res) => {
   );
 });
 
+app.get("/details", (req, res) => {
+  res.status(200).json({
+    name: "Sandeep",
+    job: "Piepline - deploy",
+  });
+});
+
 app.get("/list", (req, res) => {
   res.status(200).json({
     data: [
